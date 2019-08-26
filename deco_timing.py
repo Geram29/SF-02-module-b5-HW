@@ -9,7 +9,7 @@ def deco_timing(NUM_RUNS):
                 end = time.time()
                 total = total + (end-start)
                 avg_time = total / NUM_RUNS
-            print(">>> Среднее время выполнения: %.5f секунд\n" % avg_time)
+            print("\n>>> Среднее время выполнения: %.5f секунд\n" % avg_time)
             return return_value
         return wrapper
     return main_decorator
